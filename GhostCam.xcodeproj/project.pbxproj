@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0613AF621C650A2200CA2EF9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0613AF611C650A2200CA2EF9 /* AboutViewController.swift */; };
+		061C89CE1C3F01C50079B61E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061C89CD1C3F01C50079B61E /* Movie.swift */; };
+		061C89D01C3F0EFB0079B61E /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061C89CF1C3F0EFB0079B61E /* MovieTableViewCell.swift */; };
+		0649E82C1C3A1CDF00AED291 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649E82B1C3A1CDF00AED291 /* TabBarViewController.swift */; };
+		0649E82E1C3A2FFF00AED291 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649E82D1C3A2FFF00AED291 /* MovieTableViewController.swift */; };
+		0658E6811C4DC85C002F13E6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658E6801C4DC85C002F13E6 /* SettingsTableViewController.swift */; };
+		0658E6851C4EA916002F13E6 /* SetFpsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658E6841C4EA916002F13E6 /* SetFpsTVC.swift */; };
+		0658E68A1C4EAE44002F13E6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658E6891C4EAE44002F13E6 /* Settings.swift */; };
+		0658E6AD1C5703EB002F13E6 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658E6AC1C5703EB002F13E6 /* KDCircularProgress.swift */; };
+		0658E6AF1C57141A002F13E6 /* SetMaxSecondsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658E6AE1C57141A002F13E6 /* SetMaxSecondsVC.swift */; };
+		0658E6B11C5FE470002F13E6 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0658E6B01C5FE470002F13E6 /* PlayerViewController.swift */; };
+		06A1BB4C1C2496D400F7FF2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1BB4B1C2496D400F7FF2C /* AppDelegate.swift */; };
+		06A1BB4E1C2496D400F7FF2C /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1BB4D1C2496D400F7FF2C /* CamViewController.swift */; };
+		06A1BB511C2496D400F7FF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1BB4F1C2496D400F7FF2C /* Main.storyboard */; };
+		06A1BB531C2496D400F7FF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A1BB521C2496D400F7FF2C /* Assets.xcassets */; };
+		06A1BB561C2496D400F7FF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A1BB541C2496D400F7FF2C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0613AF611C650A2200CA2EF9 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ../settingsVC/AboutViewController.swift; sourceTree = "<group>"; };
+		061C89CD1C3F01C50079B61E /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		061C89CF1C3F0EFB0079B61E /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		0649E82B1C3A1CDF00AED291 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		0649E82D1C3A2FFF00AED291 /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		0658E6801C4DC85C002F13E6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		0658E6841C4EA916002F13E6 /* SetFpsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetFpsTVC.swift; path = ../settingsVC/SetFpsTVC.swift; sourceTree = "<group>"; };
+		0658E6891C4EAE44002F13E6 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0658E6AC1C5703EB002F13E6 /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
+		0658E6AE1C57141A002F13E6 /* SetMaxSecondsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetMaxSecondsVC.swift; path = ../settingsVC/SetMaxSecondsVC.swift; sourceTree = "<group>"; };
+		0658E6B01C5FE470002F13E6 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		06A1BB481C2496D400F7FF2C /* GhostCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhostCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A1BB4B1C2496D400F7FF2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06A1BB4D1C2496D400F7FF2C /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
+		06A1BB501C2496D400F7FF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06A1BB521C2496D400F7FF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06A1BB551C2496D400F7FF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06A1BB571C2496D400F7FF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06A1BB451C2496D400F7FF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0604A9351C496E4000E8F965 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				061C89CF1C3F0EFB0079B61E /* MovieTableViewCell.swift */,
+				061C89CD1C3F01C50079B61E /* Movie.swift */,
+				0658E6891C4EAE44002F13E6 /* Settings.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		0604A9361C496E7800E8F965 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0649E82B1C3A1CDF00AED291 /* TabBarViewController.swift */,
+				06A1BB4D1C2496D400F7FF2C /* CamViewController.swift */,
+				0658E6B01C5FE470002F13E6 /* PlayerViewController.swift */,
+				0658E6801C4DC85C002F13E6 /* SettingsTableViewController.swift */,
+				0649E82D1C3A2FFF00AED291 /* MovieTableViewController.swift */,
+				0658E6861C4EA92B002F13E6 /* settings */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0604A9371C496E8F00E8F965 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06A1BB4F1C2496D400F7FF2C /* Main.storyboard */,
+				06A1BB521C2496D400F7FF2C /* Assets.xcassets */,
+				06A1BB541C2496D400F7FF2C /* LaunchScreen.storyboard */,
+				06A1BB571C2496D400F7FF2C /* Info.plist */,
+			);
+			name = Resources;
+			path = GhostCam;
+			sourceTree = "<group>";
+		};
+		0658E6861C4EA92B002F13E6 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				0658E6AE1C57141A002F13E6 /* SetMaxSecondsVC.swift */,
+				0658E6841C4EA916002F13E6 /* SetFpsTVC.swift */,
+				0613AF611C650A2200CA2EF9 /* AboutViewController.swift */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		0658E6AB1C5703AA002F13E6 /* externalSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0658E6AC1C5703EB002F13E6 /* KDCircularProgress.swift */,
+			);
+			path = externalSupport;
+			sourceTree = "<group>";
+		};
+		06A1BB3F1C2496D400F7FF2C = {
+			isa = PBXGroup;
+			children = (
+				06A1BB4A1C2496D400F7FF2C /* Classes */,
+				0604A9371C496E8F00E8F965 /* Resources */,
+				06A1BB491C2496D400F7FF2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06A1BB491C2496D400F7FF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06A1BB481C2496D400F7FF2C /* GhostCam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06A1BB4A1C2496D400F7FF2C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				06A1BB4B1C2496D400F7FF2C /* AppDelegate.swift */,
+				0658E6AB1C5703AA002F13E6 /* externalSupport */,
+				0604A9361C496E7800E8F965 /* ViewControllers */,
+				0604A9351C496E4000E8F965 /* Data Model */,
+			);
+			name = Classes;
+			path = GhostCam;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06A1BB471C2496D400F7FF2C /* GhostCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A1BB5A1C2496D400F7FF2C /* Build configuration list for PBXNativeTarget "GhostCam" */;
+			buildPhases = (
+				06A1BB441C2496D400F7FF2C /* Sources */,
+				06A1BB451C2496D400F7FF2C /* Frameworks */,
+				06A1BB461C2496D400F7FF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GhostCam;
+			productName = GhostCam;
+			productReference = 06A1BB481C2496D400F7FF2C /* GhostCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06A1BB401C2496D400F7FF2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Leyun Song";
+				TargetAttributes = {
+					06A1BB471C2496D400F7FF2C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5PXBN87QKC;
+					};
+				};
+			};
+			buildConfigurationList = 06A1BB431C2496D400F7FF2C /* Build configuration list for PBXProject "GhostCam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06A1BB3F1C2496D400F7FF2C;
+			productRefGroup = 06A1BB491C2496D400F7FF2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06A1BB471C2496D400F7FF2C /* GhostCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06A1BB461C2496D400F7FF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A1BB561C2496D400F7FF2C /* LaunchScreen.storyboard in Resources */,
+				06A1BB531C2496D400F7FF2C /* Assets.xcassets in Resources */,
+				06A1BB511C2496D400F7FF2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06A1BB441C2496D400F7FF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0658E6851C4EA916002F13E6 /* SetFpsTVC.swift in Sources */,
+				06A1BB4E1C2496D400F7FF2C /* CamViewController.swift in Sources */,
+				0649E82C1C3A1CDF00AED291 /* TabBarViewController.swift in Sources */,
+				061C89D01C3F0EFB0079B61E /* MovieTableViewCell.swift in Sources */,
+				0658E6AD1C5703EB002F13E6 /* KDCircularProgress.swift in Sources */,
+				0658E68A1C4EAE44002F13E6 /* Settings.swift in Sources */,
+				0658E6AF1C57141A002F13E6 /* SetMaxSecondsVC.swift in Sources */,
+				06A1BB4C1C2496D400F7FF2C /* AppDelegate.swift in Sources */,
+				0649E82E1C3A2FFF00AED291 /* MovieTableViewController.swift in Sources */,
+				0613AF621C650A2200CA2EF9 /* AboutViewController.swift in Sources */,
+				061C89CE1C3F01C50079B61E /* Movie.swift in Sources */,
+				0658E6811C4DC85C002F13E6 /* SettingsTableViewController.swift in Sources */,
+				0658E6B11C5FE470002F13E6 /* PlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06A1BB4F1C2496D400F7FF2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A1BB501C2496D400F7FF2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06A1BB541C2496D400F7FF2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A1BB551C2496D400F7FF2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06A1BB581C2496D400F7FF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06A1BB591C2496D400F7FF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06A1BB5B1C2496D400F7FF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GhostCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soul.GhostCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		06A1BB5C1C2496D400F7FF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GhostCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soul.GhostCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06A1BB431C2496D400F7FF2C /* Build configuration list for PBXProject "GhostCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A1BB581C2496D400F7FF2C /* Debug */,
+				06A1BB591C2496D400F7FF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06A1BB5A1C2496D400F7FF2C /* Build configuration list for PBXNativeTarget "GhostCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A1BB5B1C2496D400F7FF2C /* Debug */,
+				06A1BB5C1C2496D400F7FF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06A1BB401C2496D400F7FF2C /* Project object */;
+}

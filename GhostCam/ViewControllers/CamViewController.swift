@@ -398,11 +398,11 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
         self.seconds = self.maxTimeInSeconds
         self.timerLabel.hidden = false
         self.timerLabel.text = "\(seconds)"
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(CamViewController.subtractTime), userInfo: nil, repeats: true)
     }
     
     func subtractTime() {
-        self.seconds--
+        self.seconds -= 1
         self.timerLabel.text = "\(seconds)"
         
         if(seconds == 0)  {
@@ -411,6 +411,9 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
             self.movieFileOutput?.stopRecording()
             self.timerLabel.hidden = true
         }
+        
+        
+        
     }
     
     func timerBreak() {

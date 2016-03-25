@@ -27,7 +27,7 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
     var previewImage : UIImage?
     var duration : CMTime?
     var movies = [Movie]()
-    var dataQueue:dispatch_queue_t?
+    var backGroundRecordingID:UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
     
     //MARK: - UI Elements Assignment
     
@@ -77,7 +77,6 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
         self.preview.layer.addSublayer(self.previewLayer!)
         //Setup the dispatch Queue for session and data transmission
         self.sessionQueue = dispatch_queue_create( "session queue", DISPATCH_QUEUE_SERIAL)
-        self.dataQueue = dispatch_queue_create( "data queue", DISPATCH_QUEUE_SERIAL)
         self.setupResult = AVCamSetupResult.Success
         
         //Ask for Authorization if Camara access not permitted
@@ -269,6 +268,16 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
         dispatch_async(sessionQueue!, {
             //Start Recording
             if ((self.movieFileOutput?.recording) == false) {
+                //Setup BackgroundRecordingTask
+                if (UIDevice.currentDevice().multitaskingSupported) {
+                    // Setup background task. This is needed because the -[captureOutput:didFinishRecordingToOutputFileAtURL:fromConnections:error:]
+                    // callback is not received until AVCam returns to the foreground unless you request background execution time.
+                    // This also ensures that there will be time to write the file to the photo library when AVCam is backgrounded.
+                    // To conclude this background execution, -endBackgroundTask is called in
+                    // -[captureOutput:didFinishRecordingToOutputFileAtURL:fromConnections:error:] after the recorded file has been saved.
+                    self.backGroundRecordingID = UIApplication.sharedApplication().beginBackgroundTaskWithName("GhostCam Recording", expirationHandler: nil)
+                }
+                //Recording
                 if let connection = self.movieFileOutput!.connectionWithMediaType(AVMediaTypeVideo) {
                     if connection.supportsVideoStabilization {
                         connection.preferredVideoStabilizationMode = AVCaptureVideoStabilizationMode.Auto
@@ -352,6 +361,16 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
         self.movie = Movie(name: self.name!, preview: self.previewImage!, duration: self.duration!, filePath: self.filePath!)
         self.movies.append(self.movie!)
         saveMovies()
+        
+        // UI Elements Resume
+        self.library.enabled = true
+        self.settings.enabled = true
+        self.recordButton.enabled = true
+        self.recordButton.setImage(UIImage(named: "recordButton"), forState: .Normal)
+        
+        //End the background task after
+        UIApplication.sharedApplication().endBackgroundTask(self.backGroundRecordingID)
+        self.backgroundRecordingID = UIBackgroundTaskInvalid;
         
         
     }
@@ -474,7 +493,6 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
             }
         }
         
-        
     
     }
     
@@ -554,25 +572,14 @@ class CamViewController: UIViewController, AVCaptureFileOutputRecordingDelegate 
     }
     // MARK: Data Persistence
     func saveMovies() {
-        dispatch_async(dataQueue!, {
             let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(self.movies, toFile: Movie.ArchiveURL.path!)
-            dispatch_async(dispatch_get_main_queue(), {
-                if !isSuccessfulSave {
-                    self.showMessage("Failed to save movies")
-                } else {
-                    self.showMessage("Movie Saved!")
-                }
-                
-                // UI Elements Resume
-                self.library.enabled = true
-                self.settings.enabled = true
-                self.recordButton.enabled = true
-                self.recordButton.setImage(UIImage(named: "recordButton"), forState: .Normal)
 
-                
-            })
-            
-        })
+            if !isSuccessfulSave {
+                self.showMessage("Failed to save movies")
+            } else {
+                self.showMessage("Movie Saved!")
+            }
+        
     }
     
     func loadMovies() -> [Movie]? {

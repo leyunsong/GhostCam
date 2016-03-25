@@ -26,6 +26,9 @@ class SetMaxSecondsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         self.selectMaxSecondsPickView.dataSource = self
         self.navigationItem.title = "Max Record Time"
         self.tabBarController?.tabBar.hidden = true
+        
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {

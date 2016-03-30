@@ -1,2 +1,2 @@
 # GhostCam
-A video catpure, saving and playback iOS application by Swift 2
+A video catpure and playback iOS application by Swift 2

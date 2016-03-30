@@ -66,7 +66,7 @@ class PlayerViewController: UIViewController {
         self.speedUpButton.setImage(UIImage(named: "StepForwardFilled"), forState: .Highlighted)
         self.speedDownButton.setImage(UIImage(named: "StepBackwardFilled"), forState: .Highlighted)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerDidReachEndNotificationHandler:", name: "AVPlayerItemDidPlayToEndTimeNotification", object: player.currentItem)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerViewController.playerDidReachEndNotificationHandler(_:)), name: "AVPlayerItemDidPlayToEndTimeNotification", object: player.currentItem)
         // Do any additional setup after loading the view.
     }
     
